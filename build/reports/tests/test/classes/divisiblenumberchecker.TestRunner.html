@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/divisiblenumberchecker.html">divisiblenumberchecker</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.117s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Example #1.1</td>
+<td class="success">0.067s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.2</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.3</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.4</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.5</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.6</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.7</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.8</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Example #1.9</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:10?[0m
+  ?[32mGiven ?[0m?[32mthe number is 1?[0m                                                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_1()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Number is not divisible netiher by 3 nor 5&quot;?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:11?[0m
+  ?[32mGiven ?[0m?[32mthe number is 32?[0m                                                    ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_32()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Number is not divisible netiher by 3 nor 5&quot;?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:12?[0m
+  ?[32mGiven ?[0m?[32mthe number is 82?[0m                                                    ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_82()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Number is not divisible netiher by 3 nor 5&quot;?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:13?[0m
+  ?[32mGiven ?[0m?[32mthe number is 3?[0m                                   ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_3()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Fizz&quot;?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:14?[0m
+  ?[32mGiven ?[0m?[32mthe number is 93?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_93()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Fizz&quot;?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:15?[0m
+  ?[32mGiven ?[0m?[32mthe number is 25?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_25()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Buzz&quot;?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:16?[0m
+  ?[32mGiven ?[0m?[32mthe number is 500?[0m                                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_500()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;Buzz&quot;?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:17?[0m
+  ?[32mGiven ?[0m?[32mthe number is 15?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_15()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;FizzBuzz&quot;?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:18?[0m
+  ?[32mGiven ?[0m?[32mthe number is 135?[0m                                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_135()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m&quot;FizzBuzz&quot;?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 19 lis 2025, 16:38:44</p>
+</div>
+</div>
+</body>
+</html>
