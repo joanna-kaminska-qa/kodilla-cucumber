@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="divisiblenumberchecker.TestRunner" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-11-19T15:38:44.123Z" hostname="DESKTOP-CMK6P3P" time="0.123">
+<testsuite name="divisiblenumberchecker.TestRunner" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-11-19T15:43:28.669Z" hostname="DESKTOP-CMK6P3P" time="0.117">
   <properties/>
-  <testcase name="Example #1.1" classname="divisiblenumberchecker.TestRunner" time="0.067"/>
-  <testcase name="Example #1.2" classname="divisiblenumberchecker.TestRunner" time="0.007"/>
+  <testcase name="Example #1.1" classname="divisiblenumberchecker.TestRunner" time="0.065"/>
+  <testcase name="Example #1.2" classname="divisiblenumberchecker.TestRunner" time="0.008"/>
   <testcase name="Example #1.3" classname="divisiblenumberchecker.TestRunner" time="0.006"/>
   <testcase name="Example #1.4" classname="divisiblenumberchecker.TestRunner" time="0.006"/>
-  <testcase name="Example #1.5" classname="divisiblenumberchecker.TestRunner" time="0.006"/>
+  <testcase name="Example #1.5" classname="divisiblenumberchecker.TestRunner" time="0.005"/>
   <testcase name="Example #1.6" classname="divisiblenumberchecker.TestRunner" time="0.005"/>
-  <testcase name="Example #1.7" classname="divisiblenumberchecker.TestRunner" time="0.006"/>
-  <testcase name="Example #1.8" classname="divisiblenumberchecker.TestRunner" time="0.007"/>
-  <testcase name="Example #1.9" classname="divisiblenumberchecker.TestRunner" time="0.007"/>
+  <testcase name="Example #1.7" classname="divisiblenumberchecker.TestRunner" time="0.005"/>
+  <testcase name="Example #1.8" classname="divisiblenumberchecker.TestRunner" time="0.005"/>
+  <testcase name="Example #1.9" classname="divisiblenumberchecker.TestRunner" time="0.006"/>
   <system-out><![CDATA[
-Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:10?[0m
-  ?[32mGiven ?[0m?[32mthe number is 1?[0m                                                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_1()?[0m
-  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Number is not divisible netiher by 3 nor 5"?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:10?[0m
+  ?[32mGiven ?[0m?[32mthe number is 1?[0m                                   ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_1()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"None"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
-Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:11?[0m
-  ?[32mGiven ?[0m?[32mthe number is 32?[0m                                                    ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_32()?[0m
-  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Number is not divisible netiher by 3 nor 5"?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:11?[0m
+  ?[32mGiven ?[0m?[32mthe number is 32?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_32()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"None"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
-Scenario Outline: Number is or is not divisible by 3 or 5                   ?[90m# divisiblenumberchecker/is_number_divisible.feature:12?[0m
-  ?[32mGiven ?[0m?[32mthe number is 82?[0m                                                    ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_82()?[0m
-  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m                               ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Number is not divisible netiher by 3 nor 5"?[0m ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:12?[0m
+  ?[32mGiven ?[0m?[32mthe number is 82?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_82()?[0m
+  ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"None"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:13?[0m
   ?[32mGiven ?[0m?[32mthe number is 3?[0m                                   ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_3()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Fizz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Fizz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:14?[0m
   ?[32mGiven ?[0m?[32mthe number is 93?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_93()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Fizz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Fizz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:15?[0m
   ?[32mGiven ?[0m?[32mthe number is 25?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_25()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Buzz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Buzz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:16?[0m
   ?[32mGiven ?[0m?[32mthe number is 500?[0m                                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_500()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Buzz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"Buzz"?[0m                     ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:17?[0m
   ?[32mGiven ?[0m?[32mthe number is 15?[0m                                  ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_15()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"FizzBuzz"?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"FizzBuzz"?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 
 Scenario Outline: Number is or is not divisible by 3 or 5 ?[90m# divisiblenumberchecker/is_number_divisible.feature:18?[0m
   ?[32mGiven ?[0m?[32mthe number is 135?[0m                                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.the_number_is_135()?[0m
   ?[32mWhen ?[0m?[32mI ask whether it's divisible by 3 or 5?[0m             ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_ask_whether_it_s_divisible_by_3_or_5()?[0m
-  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"FizzBuzz"?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receve_answer(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should receive answer ?[0m?[32m?[1m"FizzBuzz"?[0m                 ?[90m# divisiblenumberchecker.IsNumberDivisibleSteps.i_should_receive_answer(java.lang.String)?[0m
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

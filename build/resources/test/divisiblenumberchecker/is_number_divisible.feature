@@ -7,9 +7,9 @@ Scenario Outline: Number is or is not divisible by 3 or 5
       Then  I should receive answer <answer>
       Examples:
 | number | answer |
-| 1 | "Number is not divisible netiher by 3 nor 5" |
-| 32 | "Number is not divisible netiher by 3 nor 5" |
-| 82 | "Number is not divisible netiher by 3 nor 5" |
+| 1 | "None" |
+| 32 | "None" |
+| 82 | "None" |
 | 3 | "Fizz" |
 | 93 | "Fizz" |
 | 25 | "Buzz" |

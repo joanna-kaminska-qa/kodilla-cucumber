@@ -11,7 +11,7 @@ public class DivisibleNumberChecker {
         } else if (number % 3 == 0) {
             answer = "Fizz";
         } else {
-            answer = "Number is not divisible netiher by 3 nor 5";
+            answer = "None";
         } return answer;
     }
 }
