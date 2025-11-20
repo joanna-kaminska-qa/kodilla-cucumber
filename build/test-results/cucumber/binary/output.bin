@@ -1,0 +1,25 @@
+
+cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:10[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m30[0m                                  [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m30[0m[32m should be dispensed[0m                        [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+
+cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:11[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m0[0m[32m into my wallet[0m            [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+
+cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:12[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+
+`Scenario: Withdrawal of negative amount           [90m# wallet/cash_withdrawal.feature:14[0m
+û  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m       [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+Ü  [32mWhen [0m[32mI request [0m[32m[1m-30[0m                              [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ê  [32mThen [0m[32man InvalidAmountException should be thrown[0m [90m# wallet.WalletSteps.an_InvalidAmountException_should_be_thrown()[0m
+
+fScenario: Withdrawal of amount greater than balance     [90m# wallet/cash_withdrawal.feature:19[0m
+§  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m             [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+å  [32mWhen [0m[32mI request [0m[32m[1m300[0m                                    [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32man InsufficientBalanceException should be thrown[0m [90m# wallet.WalletSteps.an_InsufficientBalanceException_should_be_thrown()[0m
