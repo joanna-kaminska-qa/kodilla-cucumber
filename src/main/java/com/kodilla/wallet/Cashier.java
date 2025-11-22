@@ -12,8 +12,9 @@ public class Cashier {
             throw new InvalidAmountException("Amount cannot be negative.");
         }
         if (wallet.getBalance() < amount) {
-            throw new InsufficientBalanceException("Insufficient funds.");
+            throw new InsufficientBalanceException("You do not have enough money in your wallet");
         }
+        wallet.debit(amount);
         cashSlot.dispense(amount);
     }
 }

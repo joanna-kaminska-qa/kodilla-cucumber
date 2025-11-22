@@ -1,25 +1,100 @@
 
-cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:10[0m
-°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
-â  [32mWhen [0m[32mI request [0m[32m[1m30[0m                                  [90m# wallet.WalletSteps.i_request_amount(int)[0m
-ú  [32mThen [0m[32m[0m[32m[1m30[0m[32m should be dispensed[0m                        [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+pScenario Outline: User checks the balance of their wallet [90m# wallet/negative_cash_withdrawal.feature:9[0m
+ú  [32mGiven [0m[32mthere is [0m[32m[1m200[0m[32m in my wallet[0m                         [90m# wallet.WalletSteps.there_is_in_my_wallet(int)[0m
+é  [32mWhen [0m[32mI check the balance of my wallet[0m                   [90m# wallet.WalletSteps.i_check_the_balance_of_my_wallet()[0m
+û  [32mThen [0m[32mI should see that the balance is [0m[32m[1m200[0m               [90m# wallet.WalletSteps.i_should_see_that_the_balance_is(int)[0m
 
-cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:11[0m
-°  [32mGiven [0m[32mI have deposited [0m[32m[1m0[0m[32m into my wallet[0m            [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
-â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
-ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+qScenario Outline: User checks the balance of their wallet [90m# wallet/negative_cash_withdrawal.feature:10[0m
+ú  [32mGiven [0m[32mthere is [0m[32m[1m0[0m[32m in my wallet[0m                           [90m# wallet.WalletSteps.there_is_in_my_wallet(int)[0m
+é  [32mWhen [0m[32mI check the balance of my wallet[0m                   [90m# wallet.WalletSteps.i_check_the_balance_of_my_wallet()[0m
+û  [32mThen [0m[32mI should see that the balance is [0m[32m[1m0[0m                 [90m# wallet.WalletSteps.i_should_see_that_the_balance_is(int)[0m
 
-cScenario Outline: Withdrawal from a wallet in credit [90m# wallet/cash_withdrawal.feature:12[0m
+lScenario Outline: Withdrawal from a wallet in credit [90m# wallet/positive_cash_withdrawal.feature:10[0m
 °  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
-â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
-ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m30[0m                                  [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m30[0m[32m should be dispensed[0m                        [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m170[0m         [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
 
-`Scenario: Withdrawal of negative amount           [90m# wallet/cash_withdrawal.feature:14[0m
-û  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m       [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
-Ü  [32mWhen [0m[32mI request [0m[32m[1m-30[0m                              [90m# wallet.WalletSteps.i_request_amount(int)[0m
-ê  [32mThen [0m[32man InvalidAmountException should be thrown[0m [90m# wallet.WalletSteps.an_InvalidAmountException_should_be_thrown()[0m
+lScenario Outline: Withdrawal from a wallet in credit [90m# wallet/positive_cash_withdrawal.feature:11[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m0[0m[32m into my wallet[0m            [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m0[0m           [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
 
-fScenario: Withdrawal of amount greater than balance     [90m# wallet/cash_withdrawal.feature:19[0m
-§  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m             [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
-å  [32mWhen [0m[32mI request [0m[32m[1m300[0m                                    [90m# wallet.WalletSteps.i_request_amount(int)[0m
-ú  [32mThen [0m[32man InsufficientBalanceException should be thrown[0m [90m# wallet.WalletSteps.an_InsufficientBalanceException_should_be_thrown()[0m
+lScenario Outline: Withdrawal from a wallet in credit [90m# wallet/positive_cash_withdrawal.feature:12[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m200[0m         [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+
+zScenario: User withdraws money multiple times                      [90m# wallet/positive_cash_withdrawal.feature:14[0m
+Ø  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m                        [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m50[0m                                                [90m# wallet.WalletSteps.i_request_amount(int)[0m
+™  [32mThen [0m[32m[0m[32m[1m50[0m[32m should be dispensed[0m                                      [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+©  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m150[0m                       [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m100[0m                                               [90m# wallet.WalletSteps.i_request_amount(int)[0m
+™  [32mThen [0m[32m[0m[32m[1m100[0m[32m should be dispensed[0m                                     [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+©  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m50[0m                        [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m70[0m                                                [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ß  [32mThen [0m[32man InsufficientBalanceException should be thrown[0m            [90m# wallet.WalletSteps.an_InsufficientBalanceException_should_be_thrown()[0m
+í  [32mAnd [0m[32mnothing should be dispensed[0m                                  [90m# wallet.WalletSteps.nothing_should_be_dispensed()[0m
+≥  [32mAnd [0m[32mI should be told that I don't have enough money in my wallet[0m [90m# wallet.WalletSteps.I_should_be_told_that_I_don_t_have_enough_money_in_my_wallet()[0m
+
+bScenario Outline: Withdrawal from a wallet in credit [90m# wallet/wallet_balance.feature:11[0m
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+â  [32mWhen [0m[32mI request [0m[32m[1m30[0m                                  [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ú  [32mThen [0m[32m[0m[32m[1m30[0m[32m should be dispensed[0m                        [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m170[0m         [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+	
+	bScenario Outline: Withdrawal from a wallet in credit [90m# wallet/wallet_balance.feature:12[0m
+	°  [32mGiven [0m[32mI have deposited [0m[32m[1m0[0m[32m into my wallet[0m            [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+	â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+	ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+	õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m0[0m           [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+
+
+
+bScenario Outline: Withdrawal from a wallet in credit [90m# wallet/wallet_balance.feature:13[0m
+
+°  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m          [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+
+â  [32mWhen [0m[32mI request [0m[32m[1m0[0m                                   [90m# wallet.WalletSteps.i_request_amount(int)[0m
+
+ú  [32mThen [0m[32m[0m[32m[1m0[0m[32m should be dispensed[0m                         [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+
+õ  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m200[0m         [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+
+_Scenario: Withdrawal of negative amount           [90m# wallet/wallet_balance.feature:15[0m
+û  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m       [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+Ü  [32mWhen [0m[32mI request [0m[32m[1m-30[0m                              [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ê  [32mThen [0m[32man InvalidAmountException should be thrown[0m [90m# wallet.WalletSteps.an_InvalidAmountException_should_be_thrown()[0m
+
+pScenario: Withdrawal of amount greater than balance                [90m# wallet/wallet_balance.feature:20[0m
+Ø  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m                        [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m300[0m                                               [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ß  [32mThen [0m[32man InsufficientBalanceException should be thrown[0m            [90m# wallet.WalletSteps.an_InsufficientBalanceException_should_be_thrown()[0m
+í  [32mAnd [0m[32mnothing should be dispensed[0m                                  [90m# wallet.WalletSteps.nothing_should_be_dispensed()[0m
+≥  [32mAnd [0m[32mI should be told that I don't have enough money in my wallet[0m [90m# wallet.WalletSteps.I_should_be_told_that_I_don_t_have_enough_money_in_my_wallet()[0m
+
+gScenario Outline: User checks the balance of their wallet [90m# wallet/wallet_balance.feature:33[0m
+ú  [32mGiven [0m[32mthere is [0m[32m[1m200[0m[32m in my wallet[0m                         [90m# wallet.WalletSteps.there_is_in_my_wallet(int)[0m
+é  [32mWhen [0m[32mI check the balance of my wallet[0m                   [90m# wallet.WalletSteps.i_check_the_balance_of_my_wallet()[0m
+û  [32mThen [0m[32mI should see that the balance is [0m[32m[1m200[0m               [90m# wallet.WalletSteps.i_should_see_that_the_balance_is(int)[0m
+
+gScenario Outline: User checks the balance of their wallet [90m# wallet/wallet_balance.feature:34[0m
+ú  [32mGiven [0m[32mthere is [0m[32m[1m0[0m[32m in my wallet[0m                           [90m# wallet.WalletSteps.there_is_in_my_wallet(int)[0m
+é  [32mWhen [0m[32mI check the balance of my wallet[0m                   [90m# wallet.WalletSteps.i_check_the_balance_of_my_wallet()[0m
+û  [32mThen [0m[32mI should see that the balance is [0m[32m[1m0[0m                 [90m# wallet.WalletSteps.i_should_see_that_the_balance_is(int)[0m
+
+pScenario: User withdraws money multiple times                      [90m# wallet/wallet_balance.feature:36[0m
+Ø  [32mGiven [0m[32mI have deposited [0m[32m[1m200[0m[32m into my wallet[0m                        [90m# wallet.WalletSteps.i_have_deposited_into_my_wallet(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m50[0m                                                [90m# wallet.WalletSteps.i_request_amount(int)[0m
+™  [32mThen [0m[32m[0m[32m[1m50[0m[32m should be dispensed[0m                                      [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+©  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m150[0m                       [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m100[0m                                               [90m# wallet.WalletSteps.i_request_amount(int)[0m
+™  [32mThen [0m[32m[0m[32m[1m100[0m[32m should be dispensed[0m                                     [90m# wallet.WalletSteps.amount_should_be_dispensed(int)[0m
+©  [32mAnd [0m[32mThe balance of my wallet should be [0m[32m[1m50[0m                        [90m# wallet.WalletSteps.the_balance_of_my_wallet_should_be(int)[0m
+ó  [32mWhen [0m[32mI request [0m[32m[1m70[0m                                                [90m# wallet.WalletSteps.i_request_amount(int)[0m
+ß  [32mThen [0m[32man InsufficientBalanceException should be thrown[0m            [90m# wallet.WalletSteps.an_InsufficientBalanceException_should_be_thrown()[0m
+í  [32mAnd [0m[32mnothing should be dispensed[0m                                  [90m# wallet.WalletSteps.nothing_should_be_dispensed()[0m
+≥  [32mAnd [0m[32mI should be told that I don't have enough money in my wallet[0m [90m# wallet.WalletSteps.I_should_be_told_that_I_don_t_have_enough_money_in_my_wallet()[0m
