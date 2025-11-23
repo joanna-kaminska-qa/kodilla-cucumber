@@ -1,6 +1,6 @@
 # kodilla-cucumber
 
-![Java](https://img.shields.io/badge/Java-17%2B-blue)
+![Java](https://img.shields.io/badge/Java-21-blue)
 ![Gradle](https://img.shields.io/badge/Gradle-8-green)
 ![Cucumber](https://img.shields.io/badge/Cucumber-7.12.0-brightgreen)
 ![JUnit](https://img.shields.io/badge/JUnit-5.9.1-purple)
